@@ -65,7 +65,6 @@
     <Compile Include="WCF\IMarketDataCallbackChannel.cs" />
     <Compile Include="IMarketDataConfig.cs" />
     <Compile Include="WCF\IWCFMarketDataProvider.cs" />
-    <Compile Include="WCF\IWCFMarketDataRemoteClient.cs" />
     <Compile Include="WCF\MarketDataCallbackChannel.cs" />
     <Compile Include="WCF\SimpleMarketDataItem.cs" />
     <Compile Include="MarketDataConfig.cs" />
@@ -75,6 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NetMQ\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
